@@ -1,0 +1,25 @@
+Hacker 2.9.04 Release Notes
+___________________________
+
+ _   _    __    ___  _  _  ____  ____ 
+( )_( )  /__\  / __)( )/ )( ___)(  _ \
+ ) _ (  /(__)\( (__  )  (  )__)  )   /
+(_) (_)(__)(__)\___)(_)\_)(____)(_)\_)
+
+ /'___`\     /'_ `\       /'__`\/\ \\ \     
+/\_\ /\ \   /\ \L\ \     /\ \/\ \ \ \\ \    
+\/_/// /__  \ \___, \    \ \ \ \ \ \ \\ \_  
+   // /_\ \__\/__,/\ \  __\ \ \_\ \ \__ ,__\
+  /\______/\_\    \ \_\/\_\\ \____/\/_/\_\_/
+  \/_____/\/_/     \/_/\/_/ \/___/    \/_/  
+
+This game was made completely by me(Abhay Rana), under no supervision, and on a P4 1.7 GHz processor with only 256 MB RAM. If you like this game please tell me. And I shall be glad to make more of those. Currently this game does have some sharp edges, like it only reads the first 10 saved games. And I do not intend to clear them because, I've lost my source code. But if I get it one day, I might improve upon it. please tell me whether you liked it or not. And remember you can NEVER play this game without reading its help file. So do read it. It is illustrated, so hopefully you will like it. I have also made a Sudoku solver, and i am right now making a Battleship Game. If you want to contact me, Please drop a word at:
+
+abhay.inspiration@gmail.com
+Also please check out my site at:
+www.papercut.co.nr
+
+Hacker is done
+
+Let us all sing a song
+
