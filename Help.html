@@ -1,0 +1,83 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+<title>Hacker 2.9.04 Help</title>
+</head><body>
+<h2><center>Introduction</center></h2> Welcome to Hacker, a game built
+completely by me(i.e Abhay Rana). Hacker is a game that allows the
+player(you) to hack into servers of 9 companies and get money. Your aim
+is to get as much money as you can within the stipulated 30 days. After
+30 days, the game finishes.<hr>
+<h3>How To Play</h3>
+Hacker is a text based game, and you have to <i>type</i>
+everything. A lot of people have asked me to convert it to a graphic
+based game, but it seems fine to me in text. When you start the game,
+you shall face such a screen:
+<img src="Readme_files/welcome.jpg"><br>Soon the loading will be
+completed and you shall be asked to enter a name. If you have saved
+your game, Hacker shall allow you to load the game at this stage. The
+Name entry screen looks like this. Type in anything you want.<br><br>
+<tt>Enter Your Name :Nemo<br><br></tt>
+After you enter the name, your Home Page shall be displayed, and this
+is the center of all your hacking activities. This consists of 3 parts.
+The first is the list of 9 servers you may hack into. The second is the
+information part. Here you name , days spent and Cash is displayed. the
+third is the text entry box, where you shall enter commands:
+<img src="Readme_files/welcom2.jpg"><br>
+<h4>Connect</h4><br>
+The first command you will use is <b><tt>CONNECT</tt></b>. It (true to its name) is used to connect to a server. The syntax of the command is
+<p><tt>CONNECT [Site Number]</tt></p><p>
+So type in </p><p><tt><font color="green">CONNECT 2</font></tt></p><p> to connect to Amazon.com, and hit Enter.
+</p><h4>Name And Password</h4>
+After you connect to a site, you will face a welcome message from the site, asking for a user name and password:<br>
+<img src="Readme_files/amazon.jpg"><br>At the name prompt, you can type
+in the user name(if you are an employee of Amazon, or are a great
+seer). If you somehow type the correct name, the site shall accept it.
+But if you don't, which is the case over here, you should type in the
+following command:
+<p><tt><font color="green">PNAME</font></tt><font color="green"></font></p><p>PNAME
+stands for ProgramName. As soon as you hit enter, the program shall go
+through several permutations and combinations to hack into the name.
+The program also, through a malicious code, increases the number of
+attempts from 3 to 50, so the chances of hacking are increased.<br>After you enter the command, you shall face such a screen:<br>
+<img src="Readme_files/ncrack.jpg"><br>
+After you crack the name you shall be asked for a password. Here too the similar command, </p><p><tt><font color="green">PPASS</font></tt></p><p> will be used. Type in the command and stand back as you hack into the server.
+</p><h3>Access Granted</h3>
+After you correctly access the server, you shall face this screen:
+<img src="Readme_files/pcrack.jpg"><br>At this stage you have gained
+access to the server. Now you only have to hack the payment file. To
+get the name of the Payment file, type in either <p><tt><font color="green">DIR</font></tt> or <tt><font color="green">LS</font></tt></p><p>
+DIR is for Windows and DOS based systems, while LS works for UNIX and
+LINUX. You may also clear the screen by using the good old <tt><font color="green">CLS</font></tt>
+command. The directory structure of each server is different. There
+will generally be 2 files, one with an extension of DBF(ie
+DataBaseFile). It is this filename you will have to remember.
+<br>On my PC, the DIR command, after the CLS command, loks like this:
+<img src="Readme_files/dir.jpg">There are two files, and the one
+important for us, is the employee.dbf file. Its name may be different
+on your system, but remember the extension dbf. to edit a dbf file, you
+need sql support, and fortunately we are provided with miniSQL.
+</p><h4>miniSQL</h4>
+type in <p><tt><font color="green">SQL </font></tt></p><p>at the screen, and you shall be taken to miniSQL. miniSQL, is really mini, and only uses commands that we shall use. <br>
+The following commands are valid for miniSQL:<br><tt><font color="green">q </font></tt> to quit and go back to the previous screen<br><tt><font color="green">SELECT [field name] FROM [filename]</font></tt> to read the file<br><b>Note:</b><br> The Filename should be without the dbf extension. For e.g :<b>employee</b>, NOT employee.dbf<br> Try the command SELECT now. You shall face such a listing:
+<img src="Readme_files/select.jpg"><br>The amount range from $227 to
+$3660 in our case. Try to be within these limits when you hack, since
+the system operator shall notice, if a check goes out for
+$20000.Fortunately there is a better way of guessing the amount. Type
+in <tt><br><font color="green">SELECT AVG FROM [Filename]</font><br></tt>
+The filename will be employee in our case(not employee.dbf). This
+command calculates the avg of all checks sent, and displays it.<img src="Readme_files/avg.jpg"><br>So
+now we know that we have to get ourselves a check of around $1337 to
+toe the line. Let us get us $1400 as a round figure. To insert a record
+into a table in SQL, we use the INSERT command. Type in <tt><br><font color="green">INSERT INTO [Filename] </font><br></tt>and you will face this:<br>
+<img src="Readme_files/insert.jpg"><br>The new a/c could be in any
+name. But the a/m should be near the average that you get using the
+earlier command. The server, supposedly, notices only payments that are
+way below or above the average. So now that you have hacked, quitely
+slip off the server. First exit SQL by typing <tt>'q'</tt> at the prompt. Then get out from the server by typing 
+<tt><br><font color="green">EXIT</font></tt><font color="green"> or <tt><font color="green">QUIT</font><br></tt></font>
+You shall get back to the home page. The amout shall be increased, and you shall have spent a day.
+<br>
+If you do not want to play the entire game in one sitting, type in 
+<tt><br><font color="green">SAVE </font></tt> at the home screen to save the game. When you restart, you shall be allowed the option of restoring it from where you left it.
+</p></body></html>
